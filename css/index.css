@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    height: 0px;
+    background-color: #e3e2df;
+}
+h1{
+    
+    color: #5d001e;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 60px;
+}
+input{
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
+    height: 60px;
+    width: 200px;
+    font-size: 24px;
+}

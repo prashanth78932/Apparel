@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPAREL</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <div id="maindiv">
+        <div id="heading">
+            <h1>Apparel</h1>
+            
+        </div>
+       
+        
+    
+    <nav id="navbar">
+        <ul>
+            <a href="./men.html"><li>Men</li></a>
+            <a href="./women.html"><li>Women</li></a>
+        </ul>
+    </nav>
+    <section id="select">
+        <img src="../images/1.png" alt="" class="selection">
+        <button class="b" id="b1" onclick="next()"> > </button>
+        <button class="b" id="b2" onclick="prev()"> < </button>
+    </section>
+    <section id="display">
+       <a href="./men.html"> <img class="discount" id="d1" src="../images/discount1.png" alt=""></a>
+       <a href="./women.html"> <img class="discount" id="d2" src="../images/discount2.png" alt=""></a>
+       <a href="./men.html"> <img class="discount" id="d3" src="../images/discount3.png" alt=""></a>
+       <a href="./women.html"> <img class="discount" id="d4" src="../images/discount4.png" alt=""></a>
+       <a href="./men.html"> <img class="discount" id="d5" src="../images/discount5.png" alt=""></a>
+       <a href="./men.html"> <img class="discount" id="d6" src="../images/discount6.png" alt=""></a>
+    </section>
+</div>
+
+<script>
+    var i=0;
+    var images=['1.png','3.png']
+    var sliderimg=document.querySelector('.selection')
+    function prev()
+    {
+        if(i<=0)
+            i=images.length;
+            i--
+        return setImg()
+    }
+    function next()
+    {
+        if(i>=images.length-1)
+            i=-1;
+            i++
+        return setImg()
+    }
+    function setImg()
+    {
+        return sliderimg.setAttribute('src','../images/'+images[i])
+    }
+</script>
+
+</body>
+</html>
